@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="site.fieldmaus.hotelline">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AirReserve" />
+        <activity android:name=".AirInfo" />
+        <activity android:name=".FlightInfo" />
+        <activity android:name=".HotelSearch" />
+        <activity android:name=".RoomSettings" />
+        <activity android:name=".HotelReserve" />
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AccountRegister" />
+        <activity android:name=".MyReserve" />
+        <activity android:name=".HotelManagement" />
+        <activity android:name=".AirManagement" />
+        <activity android:name=".RoomManagement" />
+        <activity android:name=".HotelRegister" />
+        <activity android:name=".RoomRegister" />
+        <activity android:name=".RoomSearch" />
+        <activity android:name=".AirRegister" />
+        <activity android:name=".FlightManagement" />
+        <activity android:name=".FlightRegister" />
+        <activity android:name=".FlightSearch" />
+        <activity android:name=".HotelSettings" />
+        <activity android:name=".ReserveInfo" />
+        <activity android:name=".HotelInfo" />
+        <activity android:name=".RoomInfo"></activity>
+    </application>
+
+</manifest>
