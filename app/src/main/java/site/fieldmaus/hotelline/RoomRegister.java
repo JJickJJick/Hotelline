@@ -1,15 +1,13 @@
 package site.fieldmaus.hotelline;
 
 import android.app.ProgressDialog;
-import android.content.Intent;
+import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -29,7 +27,7 @@ public class RoomRegister extends AppCompatActivity {
     private static final String URL_FOR_REGISTRATION = "https://test.fieldmaus.site/room_register.php";
     ProgressDialog progressDialog;
 
-    private EditText roomname, limitcnt,text_value;
+    private EditText roomname, limitcnt, text_value;
     private Button btnRegister;
 
     @Override
@@ -66,7 +64,7 @@ public class RoomRegister extends AppCompatActivity {
     }
 
     private void submitForm() {
-        registerRoom(roomname.getText().toString(), getIntent().getExtras().getString("hotel_id"), limitcnt.getText().toString(),text_value.getText().toString());
+        registerRoom(roomname.getText().toString(), getIntent().getExtras().getString("hotel_id"), limitcnt.getText().toString(), text_value.getText().toString());
     }
 
     private void registerRoom(final String room_name, final String hotel_id, final String limit_cnt, final String product_value) {

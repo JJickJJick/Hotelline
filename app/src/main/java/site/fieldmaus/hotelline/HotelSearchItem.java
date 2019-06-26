@@ -15,20 +15,20 @@ public class HotelSearchItem {
         return name;
     }
 
-    public String getValue() {
-        return value;
-    }
-
-    public String getScore() {
-        return score;
-    }
-
     public void setName(String name) {
         this.name = name;
     }
 
+    public String getValue() {
+        return value;
+    }
+
     public void setValue(String value) {
         this.value = value;
+    }
+
+    public String getScore() {
+        return score;
     }
 
     public void setScore(String score) {

@@ -61,7 +61,7 @@ public class AirReserve extends Activity {
         final String VALUE = String.valueOf(head * headvalue);
         final String RESDATE = dtos.format(nowdate);
 
-        flight_code.setText(getIntent().getExtras().getString("flight_code")+"-"+getIntent().getExtras().getString("flight_id"));
+        flight_code.setText(getIntent().getExtras().getString("flight_code") + "-" + getIntent().getExtras().getString("flight_id"));
         airline_name.setText(getIntent().getExtras().getString("air_name"));
         start_date.setText(STARTDATE);
         end_date.setText(ENDDATE);

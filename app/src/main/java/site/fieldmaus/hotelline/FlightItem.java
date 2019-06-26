@@ -25,63 +25,63 @@ public class FlightItem {
         return airname;
     }
 
-    public String getFlightcode() {
-        return flightcode;
-    }
-
-    public String getDept() {
-        return dept;
-    }
-
-    public String getDest() {
-        return dest;
-    }
-
-    public String getStarttime() {
-        return starttime;
-    }
-
-    public String getEndtime() {
-        return endtime;
-    }
-
-    public String getScore() {
-        return score;
-    }
-
-    public String getValue() {
-        return value;
-    }
-
     public void setAirname(String airname) {
         this.airname = airname;
     }
 
-    public void setDept(String dept) {
-        this.dept = dept;
-    }
-
-    public void setDest(String dest) {
-        this.dest = dest;
+    public String getFlightcode() {
+        return flightcode;
     }
 
     public void setFlightcode(String flightcode) {
         this.flightcode = flightcode;
     }
 
+    public String getDept() {
+        return dept;
+    }
+
+    public void setDept(String dept) {
+        this.dept = dept;
+    }
+
+    public String getDest() {
+        return dest;
+    }
+
+    public void setDest(String dest) {
+        this.dest = dest;
+    }
+
+    public String getStarttime() {
+        return starttime;
+    }
+
     public void setStarttime(String starttime) {
         this.starttime = starttime;
+    }
+
+    public String getEndtime() {
+        return endtime;
     }
 
     public void setEndtime(String endtime) {
         this.endtime = endtime;
     }
 
-    public void setValue(String value) {
-        this.value = value;
+    public String getScore() {
+        return score;
     }
 
     public void setScore(String score) {
         this.score = score;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
     }
 }

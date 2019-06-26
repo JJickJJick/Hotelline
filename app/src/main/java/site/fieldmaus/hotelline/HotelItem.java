@@ -15,20 +15,20 @@ public class HotelItem {
         return name;
     }
 
-    public String getLocal() {
-        return local;
-    }
-
-    public String getScore() {
-        return score;
-    }
-
     public void setName(String name) {
         this.name = name;
     }
 
+    public String getLocal() {
+        return local;
+    }
+
     public void setLocal(String local) {
         this.local = local;
+    }
+
+    public String getScore() {
+        return score;
     }
 
     public void setScore(String score) {

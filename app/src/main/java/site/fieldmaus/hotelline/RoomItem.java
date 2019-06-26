@@ -13,12 +13,12 @@ public class RoomItem {
         return name;
     }
 
-    public String getLimitcnt() {
-        return limitcnt;
-    }
-
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getLimitcnt() {
+        return limitcnt;
     }
 
     public void setLimitcnt(String limitcnt) {

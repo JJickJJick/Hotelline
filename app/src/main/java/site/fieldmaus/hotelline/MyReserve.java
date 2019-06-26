@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -133,11 +132,10 @@ public class MyReserve extends AppCompatActivity {
                                 intent.putExtra("end_date", end_date[position]);
                                 intent.putExtra("product_score", product_score[position]);
                                 intent.putExtra("product_value", product_value[position]);
-                                if(product_type[position].equals("hotel")){
+                                if (product_type[position].equals("hotel")) {
                                     intent.putExtra("hotel_name", hotel_name[position]);
                                     intent.putExtra("room_name", room_name[position]);
-                                }
-                                else{
+                                } else {
                                     intent.putExtra("airline_name", airline_name[position]);
                                     intent.putExtra("flight_name", flight_name[position]);
                                 }

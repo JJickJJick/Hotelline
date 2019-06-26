@@ -6,8 +6,6 @@ import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -84,7 +82,7 @@ public class AirInfo extends AppCompatActivity {
                     boolean error = jObj.getBoolean("error");
 
                     if (!error) {
-                        Toast.makeText(getApplicationContext(),  "정상적으로 변경했습니다!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "정상적으로 변경했습니다!", Toast.LENGTH_SHORT).show();
                         finish();
                     } else {
 

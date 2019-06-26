@@ -15,6 +15,10 @@ public class RoomSearchItem {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getCnt() {
         return limit_cnt;
     }
@@ -23,15 +27,11 @@ public class RoomSearchItem {
         return value;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setValue(String value) {
+        this.value = value;
     }
 
     public void setLimitcnt(String limit_cnt) {
         this.limit_cnt = limit_cnt;
-    }
-
-    public void setValue(String value) {
-        this.value = value;
     }
 }
